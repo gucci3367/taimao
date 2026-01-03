@@ -3,113 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【台茂當舖】內湖頂級融資 | 成功路三段88號 | 汽機車借款免留車</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>【台茂精緻融資】內湖合法借貸首選 | 成功路三段88號 | 汽機車借款免留車</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #c5a059; --black: #0a0a0a; --dark-grey: #1a1a1a; --line-green: #06c755; }
+        :root { --gold: #d4af37; --black: #050505; --dark-grey: #121212; --soft-grey: #a0a0a0; --line-green: #06c755; }
         body { font-family: 'Noto Sans TC', sans-serif; margin: 0; color: #e0e0e0; background: var(--black); line-height: 1.8; scroll-behavior: smooth; }
         
         /* 導覽列 */
-        nav { background: rgba(0,0,0,0.98); padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--gold); }
+        nav { background: rgba(0,0,0,0.98); padding: 20px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(212,175,55,0.3); }
         .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
-        .logo { font-family: 'Playfair Display', serif; font-size: 1.8em; color: var(--gold); text-decoration: none; font-weight: 700; letter-spacing: 2px; }
-        .nav-links a { color: #fff; text-decoration: none; margin-left: 25px; font-weight: bold; transition: 0.3s; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.8em; color: var(--gold); text-decoration: none; font-weight: 700; letter-spacing: 3px; }
+        .nav-links a { color: #fff; text-decoration: none; margin-left: 30px; font-weight: bold; font-size: 0.95em; transition: 0.3s; }
         .nav-links a:hover { color: var(--gold); }
 
-        /* 豪華形象區 */
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1556740782-b103e945e396?auto=format&fit=crop&w=1500&q=80'); 
-                background-size: cover; background-position: center; padding: 180px 20px; text-align: center; border-bottom: 5px solid var(--gold); }
-        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4.5em; color: var(--gold); margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
-        .hero p { font-size: 1.6em; margin: 25px 0 40px; color: #fff; letter-spacing: 1px; }
-        .btn-gold { background: var(--gold); color: #000; padding: 18px 50px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2em; transition: 0.3s; box-shadow: 0 5px 15px rgba(197,160,89,0.3); }
-        .btn-gold:hover { background: #e0bc7a; transform: translateY(-3px); }
+        /* 形象區 */
+        .hero { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?auto=format&fit=crop&w=1500&q=80'); 
+                background-size: cover; background-position: center; padding: 200px 20px; text-align: center; border-bottom: 3px solid var(--gold); }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4.8em; color: var(--gold); margin: 0; text-shadow: 3px 3px 15px rgba(0,0,0,0.9); }
+        .hero p { font-size: 1.6em; margin: 30px 0 50px; color: #fff; font-weight: 300; letter-spacing: 2px; }
+        .btn-gold { background: var(--gold); color: #000; padding: 20px 60px; text-decoration: none; border-radius: 2px; font-weight: bold; font-size: 1.2em; transition: 0.4s; box-shadow: 0 5px 20px rgba(212,175,55,0.4); }
+        .btn-gold:hover { background: #fff; color: #000; transform: translateY(-5px); }
 
-        .container { max-width: 1200px; margin: 80px auto; padding: 0 20px; }
-        .section-title { text-align: center; margin-bottom: 60px; }
-        .section-title h2 { font-size: 3em; color: var(--gold); font-family: 'Playfair Display', serif; margin-bottom: 10px; }
-        .section-title hr { width: 80px; border: 2px solid var(--gold); margin: 20px auto; }
+        .container { max-width: 1100px; margin: 100px auto; padding: 0 20px; }
+        .section-title { text-align: center; margin-bottom: 80px; }
+        .section-title h2 { font-size: 3.2em; color: var(--gold); font-family: 'Playfair Display', serif; margin-bottom: 15px; }
+        .section-title hr { width: 100px; border: 1.5px solid var(--gold); margin: 25px auto; }
 
-        /* 成功案例 - 生動寫實 */
+        /* 成功案例 */
         .story-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
-        .story-card { background: var(--dark-grey); padding: 40px; border-radius: 20px; border-left: 6px solid var(--gold); box-shadow: 0 15px 40px rgba(0,0,0,0.6); position: relative; }
-        .story-card::before { content: "“"; font-size: 5em; color: rgba(197,160,89,0.1); position: absolute; top: 10px; left: 20px; }
-        .story-card h3 { color: var(--gold); margin-top: 0; font-size: 1.5em; }
-        .story-card p { font-style: italic; color: #ccc; line-height: 2; }
-        .author { margin-top: 25px; font-weight: bold; color: var(--gold); display: block; text-align: right; }
+        .story-card { background: var(--dark-grey); padding: 45px; border-radius: 4px; border-top: 4px solid var(--gold); box-shadow: 0 20px 50px rgba(0,0,0,0.7); transition: 0.3s; }
+        .story-card:hover { transform: translateY(-10px); }
+        .story-card h3 { color: var(--gold); margin-top: 0; font-size: 1.6em; margin-bottom: 20px; }
+        .story-card p { font-style: italic; color: var(--soft-grey); line-height: 2; font-size: 1.05em; }
+        .author { margin-top: 30px; font-weight: bold; color: #fff; display: block; text-align: right; }
 
-        /* 地圖區域 - 採用您提供的正確位址 */
-        .map-wrapper { margin-top: 60px; border: 3px solid var(--gold); border-radius: 20px; overflow: hidden; height: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        /* FAQ 常見問題 */
+        .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 50px; }
+        .faq-item { background: #1a1a1a; padding: 25px; border-radius: 5px; }
+        .faq-item h4 { color: var(--gold); margin-top: 0; font-size: 1.2em; }
+        .faq-item p { color: #bbb; margin-bottom: 0; }
 
-        /* 聯絡細節 */
-        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 60px; }
-        .contact-item { background: #222; padding: 40px; border-radius: 15px; text-align: center; transition: 0.3s; }
-        .contact-item:hover { background: #2a2a2a; transform: translateY(-5px); }
-        .contact-item h3 { color: var(--gold); margin-bottom: 15px; }
+        /* 地圖區域 */
+        .map-wrapper { margin-top: 80px; border: 1px solid var(--gold); border-radius: 2px; overflow: hidden; height: 500px; box-shadow: 0 10px 40px rgba(0,0,0,0.8); }
 
         /* 右下角聯絡按鈕 */
-        .fixed-btn { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 15px; z-index: 2000; }
-        .f-icon { width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; color: #fff; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,0.5); transition: 0.3s; }
+        .fixed-btn { position: fixed; bottom: 40px; right: 40px; display: flex; flex-direction: column; gap: 20px; z-index: 2000; }
+        .f-icon { width: 75px; height: 75px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; color: #fff; text-decoration: none; box-shadow: 0 10px 30px rgba(0,0,0,0.6); transition: 0.4s; }
         .f-line { background: var(--line-green); }
         .f-phone { background: var(--gold); color: #000; }
-        .f-icon:hover { transform: scale(1.1); }
+        .f-icon:hover { transform: rotate(360deg) scale(1.1); }
 
-        footer { text-align: center; padding: 60px 20px; background: #050505; color: #888; border-top: 1px solid #222; font-size: 0.9em; }
+        footer { text-align: center; padding: 80px 20px; background: #000; color: #555; border-top: 1px solid #111; font-size: 0.95em; letter-spacing: 1px; }
     </style>
 </head>
 <body>
 
 <nav>
     <div class="nav-content">
-        <a href="#" class="logo">TAI-MAO FINANCE</a>
+        <a href="#" class="logo">TAI-MAO ELITE</a>
         <div class="nav-links">
-            <a href="#services">專屬服務</a>
+            <a href="#about">關於台茂</a>
             <a href="#stories">成功實績</a>
-            <a href="#location">服務據點</a>
+            <a href="#faq">常見問題</a>
+            <a href="#location">據點位置</a>
         </div>
     </div>
 </nav>
 
 <header class="hero">
-    <h1>台茂精品融資</h1>
-    <p>深耕內湖 ‧ 誠信卓越 ‧ 尊榮服務</p>
-    <a href="https://line.me/ti/p/areDMMNJ5b" class="btn-gold">即刻線上預約諮詢</a>
+    <h1>台茂精緻融資中心</h1>
+    <p>深耕內湖 ‧ 卓越誠信 ‧ 您的資金首選</p>
+    <a href="https://line.me/ti/p/areDMMNJ5b" class="btn-gold">即刻尊榮預約</a>
 </header>
 
 <div class="container">
+    <section id="about" class="section-title">
+        <h2>政府立案 ‧ 合法合規</h2>
+        <p>我們提供超越傳統當舖的精緻服務，以銀行級的保密規範，守護您的信用與資產價值。</p>
+        <hr>
+    </section>
+
     <section id="stories" class="section-title">
         <h2>真實成功故事</h2>
         <hr>
         <div class="story-grid">
             <div class="story-card">
-                <h3>中小企業的週轉靠山</h3>
-                <p>「在內科經營貿易的林先生，因年底貨款卡關面臨跳票。台茂在了解情況後，迅速提供免留車融資方案，從對保到撥款僅用 3 小時，助其守住多年商譽。」</p>
-                <span class="author">— 林先生 (企業主)</span>
+                <h3>企業週轉的強大後盾</h3>
+                <p>「內科林老闆因國外貨款遲延面臨跳票。台茂迅速評估，提供免留車融資，當日撥款兩百萬，協助企業化險為夷。」</p>
+                <span class="author">— 林先生 (貿易公司負責人)</span>
             </div>
             <div class="story-card">
-                <h3>精品典當的價值體現</h3>
-                <p>「陳小姐急需一筆醫療金，手中的限量名錶在一般管道估價極低。台茂鑑定師以國際拍賣行情專業評估，給予最高額度與極低利息，解決其燃眉之急。」</p>
-                <span class="author">— 陳小姐 (資深醫護)</span>
+                <h3>精品典當的價值專家</h3>
+                <p>「陳小姐急需資金，台茂鑑定師以國際拍賣會行情精準評估其收藏名錶，給予高於同業的額度，解決其燃眉之急。」</p>
+                <span class="author">— 陳小姐 (資深醫護人員)</span>
             </div>
             <div class="story-card">
-                <h3>青年創業的第一桶金</h3>
-                <p>「剛退伍的小王想加盟餐飲缺資金。我們透過機車小額融資方案，免留車讓他能繼續配送維持生計，同時成功開啟創業路，現已穩定還款。」</p>
-                <span class="author">— 王先生 (創業青年)</span>
+                <h3>微型創業的圓夢推手</h3>
+                <p>「小王想創業缺第一筆資金。台茂透過機車小額免留車方案，讓其在不影響通勤的情況下，順利開展事業藍圖。」</p>
+                <span class="author">— 王先生 (連鎖餐飲店長)</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section-title">
+        <h2>常見問題解答</h2>
+        <hr>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4>借款需要準備什麼資料？</h4>
+                <p>汽機車借款僅需身分證、行照；公司車需檢附商業登記證明。手續簡便，全程透明。</p>
+            </div>
+            <div class="faq-item">
+                <h4>利息如何計算？</h4>
+                <p>完全遵循政府法定利率，息低保密。按月計息，隨借隨還，無違約金負擔。</p>
+            </div>
+            <div class="faq-item">
+                <h4>信用瑕疵可以辦理嗎？</h4>
+                <p>可以。我們重視典當物的價值，不論您過去信用狀況如何，台茂皆竭誠為您評估方案。</p>
+            </div>
+            <div class="faq-item">
+                <h4>免留車是什麼意思？</h4>
+                <p>在完成對保手續後，您仍可保留車輛使用權，工作與代步不受影響，資金運用更靈活。</p>
             </div>
         </div>
     </section>
 
     <section id="location" class="section-title">
-        <h2>聯絡資訊與位置</h2>
+        <h2>服務據點與聯絡</h2>
         <hr>
-        <div class="contact-grid">
-            <div class="contact-item"><h3>📍 門市店址</h3><p>台北市內湖區成功路三段88號</p></div>
-            <div class="contact-item"><h3>📞 尊榮專線</h3><p>0939-777-707</p></div>
-            <div class="contact-item"><h3>💬 LINE 諮詢</h3><p>ID: areDMMNJ5b</p></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
+            <div><h3>📍 店址</h3><p>台北市內湖區成功路三段88號</p></div>
+            <div><h3>📞 電話</h3><p>0939-777-707</p></div>
+            <div><h3>💬 LINE ID</h3><p>jeff617668</p></div>
         </div>
 
         <div class="map-wrapper">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9113695272674!2d121.589133!3d25.071017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac682894563b%3A0xc3191c9676646399!2zMTE0台北市內湖區成功路三段88號!5e0!3m2!1szh-TW!2stw!4v1704256800000!5m2!1szh-TW!2stw" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.0722378897095!2d121.588825776106!3d25.0655290370217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac65074e0d7d%3A0xc6f3f00e951475c7!2zMTE0台北市內湖區成功路三段88號!5e0!3m2!1szh-TW!2stw!4v1704255000000!5m2!1szh-TW!2stw" 
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
@@ -117,9 +147,8 @@
 </div>
 
 <footer>
-    <p>台茂精品融資 | 政府立案 ‧ 合法合規 ‧ 誠信經營</p>
-    <p>地址：台北市內湖區成功路三段88號 | 電話：0939-777-707</p>
-    <p>© 2026 TAI-MAO PAWNSHOP. 全權所有。</p>
+    <p>台茂精緻融資中心 | 政府立案 ‧ 誠信經營 | 台北市內湖區成功路三段88號</p>
+    <p>© 2026 TAI-MAO PAWNSHOP. 您的信賴是我們最大的榮幸。</p>
 </footer>
 
 <div class="fixed-btn">
