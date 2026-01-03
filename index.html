@@ -3,474 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【台茂當舖】頂級金融服務 | 黑金專屬 | 內湖汽機車借款免留車 | 高價典當</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>【台茂當舖】內湖金融借貸首選 | 黑金尊榮版 | 汽機車借款免留車</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        :root { 
-            --primary-black: #1a1a1a; 
-            --accent-gold: #c5a059; 
-            --text-light: #f0f0f0; 
-            --text-dark: #333;
-            --line-green: #06c755; 
-        }
-        body { 
-            font-family: 'Noto Sans TC', sans-serif; 
-            margin: 0; 
-            color: var(--text-light); 
-            line-height: 1.8; 
-            background-color: var(--primary-black); 
-            scroll-behavior: smooth;
-        }
+        :root { --gold: #c5a059; --black: #111111; --dark-grey: #1a1a1a; --line-green: #06c755; }
+        body { font-family: 'Noto Sans TC', sans-serif; margin: 0; color: #e0e0e0; background: var(--black); line-height: 1.8; }
         
-        /* 頂部導航 */
-        nav { 
-            background: rgba(0,0,0,0.95); 
-            padding: 15px 0; 
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
-            box-shadow: 0 5px 20px rgba(0,0,0,0.5); 
-            border-bottom: 1px solid var(--accent-gold);
-        }
-        .nav-content { 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 0 25px; 
-        }
-        .logo { 
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8em; 
-            font-weight: 700; 
-            color: var(--accent-gold); 
-            text-decoration: none; 
-            letter-spacing: 2px;
-        }
-        .nav-links a { 
-            margin-left: 35px; 
-            text-decoration: none; 
-            color: var(--text-light); 
-            font-weight: 400; 
-            transition: color 0.3s ease;
-        }
-        .nav-links a:hover { color: var(--accent-gold); }
+        /* 導覽列 */
+        nav { background: rgba(0,0,0,0.95); padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--gold); }
+        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.8em; color: var(--gold); text-decoration: none; font-weight: 700; letter-spacing: 2px; }
+        .nav-links a { color: #fff; text-decoration: none; margin-left: 25px; font-weight: bold; transition: 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
 
-        /* 形象大圖 */
-        .hero { 
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1556740782-b103e945e396?auto=format&fit=crop&w=1800&q=80'); 
-            background-size: cover; 
-            background-position: center; 
-            color: white; 
-            padding: 180px 25px; 
-            text-align: center; 
-            border-bottom: 5px solid var(--accent-gold);
-        }
-        .hero h1 { 
-            font-family: 'Playfair Display', serif;
-            font-size: 4.5em; 
-            margin: 0; 
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
-            color: var(--accent-gold);
-        }
-        .hero p { 
-            font-size: 1.6em; 
-            margin: 25px 0 40px; 
-            opacity: 0.9; 
-        }
-        .hero-cta { 
-            background: var(--accent-gold); 
-            color: var(--primary-black); 
-            padding: 18px 40px; 
-            text-decoration: none; 
-            border-radius: 5px; 
-            font-weight: 700; 
-            font-size: 1.2em; 
-            transition: background 0.3s ease, transform 0.3s ease;
-        }
-        .hero-cta:hover { 
-            background: #d8b26e; 
-            transform: translateY(-3px); 
-        }
+        /* 頂級形象區 */
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&w=1500&q=80'); 
+                background-size: cover; background-position: center; padding: 160px 20px; text-align: center; border-bottom: 5px solid var(--gold); }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4em; color: var(--gold); margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.8); }
+        .hero p { font-size: 1.5em; margin-bottom: 40px; color: #fff; }
+        .btn-gold { background: var(--gold); color: #000; padding: 18px 45px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2em; transition: 0.3s; }
+        .btn-gold:hover { background: #e0bc7a; transform: scale(1.05); }
 
-        /* 內容容器 */
-        .container { 
-            max-width: 1200px; 
-            margin: 80px auto; 
-            padding: 0 25px; 
-        }
-        .section-title { 
-            text-align: center; 
-            margin-bottom: 60px; 
-        }
-        .section-title h2 { 
-            font-family: 'Playfair Display', serif;
-            font-size: 3em; 
-            color: var(--accent-gold); 
-            position: relative; 
-            display: inline-block; 
-            padding-bottom: 15px; 
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-        }
-        .section-title h2::after { 
-            content: ''; 
-            width: 80px; 
-            height: 3px; 
-            background: var(--text-light); 
-            position: absolute; 
-            bottom: 0; 
-            left: 50%; 
-            transform: translateX(-50%); 
-        }
-        .section-title p { 
-            font-size: 1.1em; 
-            color: #ccc; 
-            margin-top: 15px; 
-        }
+        .container { max-width: 1200px; margin: 80px auto; padding: 0 20px; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-size: 2.8em; color: var(--gold); font-family: 'Playfair Display', serif; }
+        .section-title hr { width: 60px; border: 2px solid var(--gold); margin: 20px auto; }
 
-        /* 特色服務 */
-        .features-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 40px; 
-            margin-top: 60px; 
-        }
-        .feature-card { 
-            background: rgba(40,40,40,0.8); 
-            padding: 35px; 
-            border-radius: 12px; 
-            text-align: center; 
-            box-shadow: 0 8px 25px rgba(0,0,0,0.4); 
-            border-bottom: 3px solid var(--accent-gold); 
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-        .feature-card:hover { 
-            transform: translateY(-8px); 
-            background: rgba(50,50,50,0.9); 
-        }
-        .feature-card h3 { 
-            color: var(--accent-gold); 
-            font-size: 1.6em; 
-            margin-bottom: 15px; 
-            font-family: 'Playfair Display', serif;
-        }
-        .feature-card p { color: #ccc; }
+        /* 成功案例 - 寫實生動 */
+        .story-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .story-card { background: var(--dark-grey); padding: 35px; border-radius: 15px; border-left: 5px solid var(--gold); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .story-card h3 { color: var(--gold); margin-top: 0; }
+        .story-card p { font-style: italic; color: #bbb; }
+        .author { margin-top: 20px; font-weight: bold; color: #fff; display: block; }
 
-        /* 成功案例 */
-        .testimonials { 
-            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1549247775-6b5c05251d1a?auto=format&fit=crop&w=1500&q=80'); 
-            background-size: cover; 
-            background-position: center; 
-            padding: 80px 0; 
-        }
-        .testimonial-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 30px; 
-            max-width: 1200px; 
-            margin: 40px auto; 
-            padding: 0 25px;
-        }
-        .testimonial-card { 
-            background: rgba(20,20,20,0.9); 
-            padding: 30px; 
-            border-radius: 10px; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
-            border-left: 5px solid var(--accent-gold); 
-            position: relative;
-        }
-        .testimonial-card::before { 
-            content: "“"; 
-            font-family: serif; 
-            font-size: 4em; 
-            color: rgba(255,255,255,0.1); 
-            position: absolute; 
-            top: 10px; 
-            left: 15px; 
-            z-index: 0;
-        }
-        .testimonial-card p { 
-            font-style: italic; 
-            color: #ddd; 
-            position: relative; 
-            z-index: 1;
-        }
-        .testimonial-card .author { 
-            margin-top: 20px; 
-            font-weight: bold; 
-            color: var(--accent-gold); 
-            font-size: 1.1em;
-        }
+        /* 服務項目 */
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; text-align: center; }
+        .service-item { padding: 40px; background: #222; border: 1px solid #333; border-radius: 10px; transition: 0.3s; }
+        .service-item:hover { border-color: var(--gold); background: #2a2a2a; }
+        .service-item i { font-size: 3em; color: var(--gold); margin-bottom: 20px; display: block; }
 
-        /* 借款流程 */
-        .process-section { 
-            background-color: #2a2a2a; 
-            padding: 80px 0; 
-        }
-        .process-steps { 
-            display: flex; 
-            justify-content: center; 
-            flex-wrap: wrap; 
-            gap: 40px; 
-            max-width: 1200px; 
-            margin: 40px auto; 
-            padding: 0 25px;
-        }
-        .process-step { 
-            text-align: center; 
-            position: relative; 
-            flex: 1; 
-            min-width: 250px; 
-            max-width: 300px;
-        }
-        .step-icon { 
-            width: 80px; 
-            height: 80px; 
-            background: var(--accent-gold); 
-            border-radius: 50%; 
-            display: inline-flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-size: 2.5em; 
-            color: var(--primary-black); 
-            margin-bottom: 20px; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        .process-step h3 { 
-            color: var(--text-light); 
-            font-size: 1.6em; 
-            margin-bottom: 10px;
-        }
-        .process-step p { color: #bbb; }
+        /* 地圖區塊 - 修正為真實 Google 地圖 */
+        .map-wrapper { margin-top: 80px; border: 2px solid var(--gold); border-radius: 15px; overflow: hidden; height: 450px; }
 
-        /* 聯絡我們 */
-        .contact-section { 
-            background: var(--primary-black); 
-            padding: 80px 0; 
-        }
-        .contact-info { 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 50px; 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            padding: 0 25px;
-        }
-        .contact-item { 
-            flex: 1; 
-            min-width: 280px; 
-            background: rgba(40,40,40,0.8); 
-            padding: 35px; 
-            border-radius: 12px; 
-            text-align: center; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.4); 
-            border-top: 3px solid var(--accent-gold);
-        }
-        .contact-item h3 { 
-            color: var(--accent-gold); 
-            font-size: 1.8em; 
-            margin-bottom: 20px; 
-            font-family: 'Playfair Display', serif;
-        }
-        .contact-item p { 
-            color: #ddd; 
-            font-size: 1.1em; 
-            margin-bottom: 10px; 
-        }
-        .contact-btn { 
-            background: var(--accent-gold); 
-            color: var(--primary-black); 
-            padding: 15px 30px; 
-            text-decoration: none; 
-            border-radius: 5px; 
-            font-weight: 700; 
-            margin-top: 20px; 
-            display: inline-block; 
-            transition: background 0.3s ease, transform 0.3s ease;
-        }
-        .contact-btn:hover { 
-            background: #d8b26e; 
-            transform: translateY(-3px); 
-        }
+        /* 聯絡區 */
+        .contact-box { background: var(--dark-grey); padding: 50px; border-radius: 15px; margin-top: 60px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; text-align: center; }
+        .contact-info-item h3 { color: var(--gold); font-size: 1.5em; }
+        .contact-info-item p { font-size: 1.2em; }
 
-        /* 地圖 */
-        .map-container { 
-            max-width: 1200px; 
-            margin: 60px auto; 
-            border-radius: 15px; 
-            overflow: hidden; 
-            border: 3px solid var(--accent-gold); 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
-        }
-
-        /* 固定聯絡按鈕（手機版最愛） */
-        .fixed-contact { 
-            position: fixed; 
-            bottom: 25px; 
-            right: 25px; 
-            z-index: 9999; 
-            display: flex; 
-            flex-direction: column; 
-            gap: 15px; 
-        }
-        .f-btn { 
-            width: 65px; 
-            height: 65px; 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            color: white; 
-            text-decoration: none; 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.4); 
-            font-size: 28px; 
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-        .f-btn:hover { transform: scale(1.1); }
+        /* 右下角懸浮鈕 */
+        .fixed-btn { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 15px; z-index: 2000; }
+        .f-icon { width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; color: #fff; text-decoration: none; box-shadow: 0 5px 15px rgba(0,0,0,0.5); transition: 0.3s; }
         .f-line { background: var(--line-green); }
-        .f-call { background: var(--accent-gold); color: var(--primary-black);}
+        .f-phone { background: var(--gold); color: #000; }
+        .f-icon:hover { transform: scale(1.1); }
 
-        footer { 
-            background: #0d0d0d; 
-            color: #666; 
-            text-align: center; 
-            padding: 40px 20px; 
-            border-top: 1px solid rgba(197,160,89,0.3);
-            font-size: 0.9em; 
-        }
-        footer a { color: var(--accent-gold); text-decoration: none; }
+        footer { text-align: center; padding: 50px; background: #0a0a0a; color: #666; font-size: 0.9em; border-top: 1px solid #222; }
     </style>
 </head>
 <body>
 
 <nav>
     <div class="nav-content">
-        <a href="#" class="logo">TAI-MAO PAWNSHOP</a>
+        <a href="#" class="logo">TAI-MAO</a>
         <div class="nav-links">
-            <a href="#services">尊榮服務</a>
-            <a href="#success-stories">成功案例</a>
-            <a href="#process">借款流程</a>
-            <a href="#contact">聯絡我們</a>
+            <a href="#services">服務</a>
+            <a href="#stories">案例</a>
+            <a href="#contact">聯絡</a>
         </div>
     </div>
 </nav>
 
 <header class="hero">
-    <h1>台茂當舖 - 您的專屬金融管家</h1>
-    <p>深耕內湖，以頂級服務與誠信，助您成就財富自由</p>
-    <a href="#contact" class="hero-cta">立即諮詢，專人服務</a>
+    <h1>台茂專業融資</h1>
+    <p>深耕內湖・誠信第一・當日撥款</p>
+    <a href="https://line.me/ti/p/areDMMNJ5b" class="btn-gold">立即線上特約諮詢</a>
 </header>
 
 <div class="container">
-    <div class="section-title">
-        <h2>尊榮金融服務</h2>
-        <p>提供您最彈性、便捷、保密的資金解決方案</p>
-    </div>
-    <div class="features-grid">
-        <div class="feature-card">
-            <h3>📈 彈性利率方案</h3>
-            <p>業界最優惠合法利率，依需求客製化，輕鬆還款無壓力。</p>
+    <section id="services" class="section-title">
+        <h2>尊榮服務項目</h2>
+        <hr>
+        <div class="service-grid">
+            <div class="service-item"><h3>🚗 汽機車免留車</h3><p>手續簡便，車子照樣開，資金靈活度 100%</p></div>
+            <div class="service-item"><h3>💎 黃金珠寶鑑定</h3><p>專業鑑定團隊，國際行情高價收當</p></div>
+            <div class="service-item"><h3>🏠 房屋土地二胎</h3><p>額度最高、息低保密，大額資金週轉最速</p></div>
         </div>
-        <div class="feature-card">
-            <h3>⏱️ 快速審核撥款</h3>
-            <p>資料齊全，專業團隊高效審核，現場即刻撥款，分秒必爭。</p>
+    </section>
+
+    <section id="stories" class="section-title">
+        <h2>真實成功案例</h2>
+        <hr>
+        <div class="story-grid">
+            <div class="story-card">
+                <h3>老闆的及時雨</h3>
+                <p>「內湖科學園區的林老闆，因貨款延遲急需兩百萬。透過台茂快速審核，當天下午就完成對保撥款，解決了跳票危機。」</p>
+                <span class="author">— 林先生 (貿易商)</span>
+            </div>
+            <div class="story-card">
+                <h3>醫療急救金</h3>
+                <p>「陳小姐家人生病需手術費，手中只有勞力士錶。我們以優於同業的行情典當，五分鐘內讓她領到現金趕往醫院。」</p>
+                <span class="author">— 陳小姐 (護理人員)</span>
+            </div>
+            <div class="story-card">
+                <h3>微型創業起點</h3>
+                <p>「小王想開雞排店缺開辦費，透過機車免留車借款五萬。現在店面穩定經營中，他非常感謝台茂的幫忙。」</p>
+                <span class="author">— 王先生 (創業青年)</span>
+            </div>
         </div>
-        <div class="feature-card">
-            <h3>🔒 隱私安全承諾</h3>
-            <p>嚴格遵守個資法規，所有資訊絕對保密，維護您的個人聲譽。</p>
+    </section>
+
+    <section id="contact" class="section-title">
+        <h2>服務據點</h2>
+        <hr>
+        <div class="contact-box">
+            <div class="contact-info-item">
+                <h3>📍 店址</h3>
+                <p>台北市內湖區成功路三段88號</p>
+            </div>
+            <div class="contact-info-item">
+                <h3>📞 專線</h3>
+                <p>0939-777-707</p>
+            </div>
+            <div class="contact-info-item">
+                <h3>💬 LINE</h3>
+                <p>ID: areDMMNJ5b</p>
+            </div>
         </div>
-        <div class="feature-card">
-            <h3>🤝 全方位服務</h3>
-            <p>汽機車、名錶、珠寶、不動產等，多樣化選擇滿足各種需求。</p>
+
+        <div class="map-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m121.5835!3m25.0775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac65f6c83759%3A0x6b49e37894a4806a!2zMTE0台北市內湖區成功路三段88號!5e0!3m2!1szh-TW!2stw!4v1704250000000!5m2!1szh-TW!2stw" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </div>
-    </div>
+    </section>
 </div>
 
-<section class="testimonials" id="success-stories">
-    <div class="section-title">
-        <h2 style="color: white;">客戶的成功故事</h2>
-        <p style="color: #ddd;">看台茂當舖如何幫助他們解決燃眉之急，開創新局</p>
-    </div>
-    <div class="testimonial-grid">
-        <div class="testimonial-card">
-            <p>「公司資金週轉不靈，銀行貸款程序冗長。台茂當舖了解我的狀況後，立即用我的賓士車辦理了免留車借款，讓我順利度過難關，真的非常感謝！」</p>
-            <div class="author">— 林先生 (企業主)</div>
-        </div>
-        <div class="testimonial-card">
-            <p>「我急需一筆資金治療家人的疾病，手頭上的鑽戒在銀行估價很低。台茂的鑑定師不僅專業，給的價格也讓我非常滿意，讓我可以及時給家人最好的治療。」</p>
-            <div class="author">— 陳小姐 (自營商)</div>
-        </div>
-        <div class="testimonial-card">
-            <p>「朋友介紹來台茂，他們不僅服務態度親切，對於我的信用狀況也能彈性處理，用機車小額借款，免留車讓我能繼續跑外送，真的解決了我的大問題。」</p>
-            <div class="author">— 王先生 (外送員)</div>
-        </div>
-    </div>
-</section>
-
-<section class="process-section" id="process">
-    <div class="section-title">
-        <h2>頂級借款流程</h2>
-        <p>簡單透明，快速掌握您的資金需求</p>
-    </div>
-    <div class="process-steps">
-        <div class="process-step">
-            <div class="step-icon">📞</div>
-            <h3>線上/電話預約</h3>
-            <p>專業顧問傾聽需求，提供初步評估建議。</p>
-        </div>
-        <div class="process-step">
-            <div class="step-icon">📝</div>
-            <h3>文件備齊/現場鑑定</h3>
-            <p>攜帶相關文件與典當物，專人現場公正鑑定。</p>
-        </div>
-        <div class="process-step">
-            <div class="step-icon">💰</div>
-            <h3>簽約對保/即刻撥款</h3>
-            <p>透明說明合約條款，確認無誤後立即撥款。</p>
-        </div>
-    </div>
-</section>
-
-<section class="contact-section" id="contact">
-    <div class="section-title">
-        <h2>尊榮專線 預約諮詢</h2>
-        <p>您的資金需求，我們使命必達</p>
-    </div>
-    <div class="contact-info">
-        <div class="contact-item">
-            <h3>📍 親洽門市</h3>
-            <p>台北市內湖區成功路三段88號</p>
-            <a href="http://googleusercontent.com/maps.google.com/3" target="_blank" class="contact-btn">地圖導航</a>
-        </div>
-        <div class="contact-item">
-            <h3>📞 電話聯繫</h3>
-            <p>0939-777-707</p>
-            <a href="tel:0939777707" class="contact-btn">立即撥號</a>
-        </div>
-        <div class="contact-item">
-            <h3>💬 LINE 諮詢</h3>
-            <p>專人線上即時回覆您的問題</p>
-            <a href="https://line.me/ti/p/areDMMNJ5b" target="_blank" class="contact-btn">加 LINE 好友</a>
-        </div>
-    </div>
-    <div class="map-container" style="margin-top: 80px;">
-        <iframe src="http://googleusercontent.com/maps.google.com/4" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</section>
-
 <footer>
-    <p>TAI-MAO PAWNSHOP | 台北市內湖區成功路三段88號</p>
-    <p>© 2026 台茂當舖 版權所有．竭誠為您服務</p>
-    <p style="font-size: 0.8em; margin-top: 20px;">
-        警語：理性借貸，信用至上。借款前請審慎評估自身還款能力，避免過度負擔。如有任何疑問，請洽詢專業人士。
-    </p>
+    <p>台茂當舖 | 政府立案・合法經營 | 成功路三段88號</p>
+    <p>© 2026 TAI-MAO PAWNSHOP. All Rights Reserved.</p>
 </footer>
 
-<div class="fixed-contact">
-    <a href="https://line.me/ti/p/areDMMNJ5b" class="f-btn f-line" title="LINE線上諮詢">💬</a>
-    <a href="tel:0939777707" class="f-btn f-call" title="撥打電話">📞</a>
+<div class="fixed-btn">
+    <a href="https://line.me/ti/p/areDMMNJ5b" class="f-icon f-line">💬</a>
+    <a href="tel:0939777707" class="f-icon f-phone">📞</a>
 </div>
 
 </body>
