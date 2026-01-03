@@ -18,14 +18,14 @@
 
         body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; color: var(--text-dark); line-height: 1.6; background-color: #fff; padding-bottom: 70px; /* 留給底部固定欄 */ }
         a { text-decoration: none; color: inherit; }
-        img { max-width: 100%; height: auto; }
+        img { max-width: 100%; height: auto; display: block; }
         
         /* --- 導航與 Header --- */
         header { 
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover; background-position: center;
             color: white; padding: 100px 20px; text-align: center;
-            margin-bottom: 40px; /* 增加底部間距 */
+            margin-bottom: 20px;
         }
         .header-content h1 { font-size: 3em; margin: 0 0 10px 0; letter-spacing: 3px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
         .header-content p { font-size: 1.4em; margin-bottom: 30px; font-weight: 300; }
@@ -35,14 +35,18 @@
         .section-title { text-align: center; font-size: 2.2em; margin: 60px 0 40px; color: var(--primary); font-weight: bold; position: relative; }
         .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--secondary); margin: 15px auto 0; }
 
-        /* --- 新增：形象橫幅區塊 --- */
+        /* --- 新增：形象橫幅區塊 (Banner) --- */
         .banner-section {
             text-align: center;
             margin-bottom: 50px;
+            padding: 0 10px;
         }
         .banner-img {
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            width: 100%; /* 確保滿版 */
+            max-width: 1000px; /* 限制最大寬度以免太寬 */
+            margin: 0 auto;
         }
 
         /* --- 特色優勢 --- */
@@ -85,7 +89,7 @@
         .contact-row { display: flex; align-items: center; margin-bottom: 20px; font-size: 1.1em; }
         .contact-icon { margin-right: 15px; font-size: 1.2em; }
         .qr-display { text-align: center; background: white; padding: 20px; border-radius: 10px; color: #333; max-width: 250px; margin: auto; }
-        .qr-display img { display: block; }
+        .qr-display img { width: 100%; height: auto; display: block; }
 
         /* --- 底部手機固定選單 --- */
         .mobile-nav { 
@@ -119,7 +123,7 @@
 </header>
 
 <div class="container banner-section">
-    <img src="image_2.png" alt="台茂當舖專業服務與店面實景" class="banner-img">
+    <img src="image_4dba64.jpg" alt="台茂當舖專業服務與店面實景" class="banner-img">
 </div>
 
 <div class="container">
