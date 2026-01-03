@@ -3,156 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>內湖台茂當舖 - 成功路三段88號 | 汽機車借款免留車 | 政府立案合法當舖</title>
-    <meta name="description" content="內湖台茂當舖，提供專業汽機車借款、黃金鑽石、名錶典當。息低保密、撥款快，免留車服務，是您在地週轉的首選。">
+    <title>內湖台茂當舖 - 成功路三段88號 | 汽機車借款免留車 | 合法低利首選</title>
+    <meta name="description" content="內湖台茂當舖，在地深耕誠信經營。專營汽機車借款免留車、黃金鑽石典當、支票貼現、房屋二胎。政府立案，合法利息，息低保密，10分鐘火速撥款。">
     <style>
         :root {
-            --primary: #002d5e;    /* 專業深藍 */
-            --secondary: #b22222;  /* 誠信深紅 */
-            --accent: #f1c40f;     /* 亮眼金 */
-            --line-green: #06c755; /* LINE 綠 */
-            --light-bg: #f9f9f9;
+            --primary: #004080;      /* 穩重深藍 */
+            --secondary: #d32f2f;    /* 活力紅 */
+            --accent: #ffc107;       /* 財富金 */
+            --text-dark: #333;
+            --text-light: #666;
+            --light-bg: #f8f9fa;
+            --line-color: #06c755;
         }
 
-        body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; color: #333; background: #fff; line-height: 1.7; }
+        body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; color: var(--text-dark); line-height: 1.6; background-color: #fff; padding-bottom: 70px; /* 留給底部固定欄 */ }
+        a { text-decoration: none; color: inherit; }
         
-        /* 豪華頂部 */
+        /* --- 導航與 Header --- */
         header { 
-            background: linear-gradient(135deg, var(--primary), #00152e); 
-            color: white; padding: 80px 20px; text-align: center; border-bottom: 6px solid var(--secondary);
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center;
+            color: white; padding: 100px 20px; text-align: center;
         }
-        .hero-h1 { font-size: 3.5em; margin: 0; letter-spacing: 8px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-        .hero-p { font-size: 1.3em; margin: 15px 0; opacity: 0.9; }
+        .header-content h1 { font-size: 3em; margin: 0 0 10px 0; letter-spacing: 3px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .header-content p { font-size: 1.4em; margin-bottom: 30px; font-weight: 300; }
+        .tagline { display: inline-block; background: var(--secondary); padding: 5px 15px; border-radius: 4px; font-size: 1.1em; font-weight: bold; margin-bottom: 20px; }
 
-        /* 導航聯絡列 */
-        .nav-bar { 
-            position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,0.95); 
-            padding: 15px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); text-align: center; backdrop-filter: blur(5px);
-        }
-        .btn { 
-            display: inline-block; padding: 12px 30px; border-radius: 50px; text-decoration: none; 
-            font-weight: bold; margin: 5px; transition: 0.3s; font-size: 1.1em;
-        }
-        .btn-call { background: var(--secondary); color: white; }
-        .btn-line { background: var(--line-green); color: white; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+        .section-title { text-align: center; font-size: 2.2em; margin: 60px 0 40px; color: var(--primary); font-weight: bold; position: relative; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--secondary); margin: 15px auto 0; }
 
-        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+        /* --- 特色優勢 --- */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: -50px; position: relative; z-index: 10; padding-bottom: 40px; }
+        .feature-box { background: white; padding: 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 10px; border-top: 4px solid var(--secondary); transition: transform 0.3s; }
+        .feature-box:hover { transform: translateY(-5px); }
+        .feature-box h3 { color: var(--primary); margin-bottom: 10px; font-size: 1.4em; }
+        .feature-box p { color: var(--text-light); font-size: 0.95em; }
 
-        /* 專業特點區 */
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 40px 0; }
-        .feature-item { text-align: center; padding: 30px; background: var(--light-bg); border-radius: 15px; border-top: 5px solid var(--primary); }
-        .feature-item h3 { color: var(--primary); margin-top: 0; }
-
-        /* 服務項目 */
-        h2 { text-align: center; color: var(--primary); font-size: 2.2em; margin-bottom: 40px; position: relative; }
-        h2::after { content: ""; width: 60px; height: 4px; background: var(--secondary); display: block; margin: 10px auto; }
-        
-        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .service-card { border: 1px solid #eee; border-radius: 15px; overflow: hidden; transition: 0.3s; background: #fff; }
-        .service-card:hover { border-color: var(--secondary); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        /* --- 服務項目 --- */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; }
+        .service-card:hover { box-shadow: 0 15px 30px rgba(0,0,0,0.15); border-color: var(--primary); }
+        .service-img { height: 200px; background-color: #ddd; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.5em; background-size: cover; background-position: center; position: relative; }
+        .service-img::after { content: ''; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,45,94,0.4); }
+        .service-img span { position: relative; z-index: 2; font-weight: bold; letter-spacing: 2px; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); }
         .service-body { padding: 25px; }
-        .service-body h3 { color: var(--secondary); margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .service-body h3 { color: var(--secondary); margin-top: 0; }
+        .service-body ul { padding-left: 20px; color: var(--text-light); font-size: 0.95em; }
+        .service-body li { margin-bottom: 8px; }
 
-        /* 借款說明 (參考同業內容) */
-        .loan-info { background: #f0f4f8; padding: 40px; border-radius: 20px; margin: 50px 0; }
-        .loan-info h3 { color: var(--primary); }
-        .loan-info ul { padding-left: 20px; }
-        .loan-info li { margin-bottom: 10px; }
+        /* --- 成功案例 (新增) --- */
+        .cases { background-color: var(--light-bg); padding: 60px 0; }
+        .case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .case-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .case-title { font-weight: bold; color: var(--primary); font-size: 1.1em; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px; }
+        .case-desc { font-style: italic; color: #555; font-size: 0.95em; line-height: 1.8; }
+        
+        /* --- FAQ 問答 (新增) --- */
+        .faq-section { max-width: 900px; margin: 0 auto; }
+        .faq-item { border-bottom: 1px solid #eee; padding: 20px 0; }
+        .faq-q { font-weight: bold; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; }
+        .faq-q::after { content: '+'; font-size: 1.5em; color: var(--secondary); }
+        .faq-a { color: var(--text-light); margin-top: 15px; display: block; line-height: 1.8; }
 
-        /* LINE & 地圖 */
-        .contact-flex { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 60px; }
-        .qr-box { text-align: center; background: #fff; padding: 30px; border-radius: 20px; border: 2px dashed #ddd; }
-        .qr-img { width: 220px; border: 5px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        /* --- 聯絡資訊 --- */
+        .contact-section { background: #2c3e50; color: white; padding: 60px 0; margin-top: 60px; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .contact-info h3 { border-bottom: 2px solid var(--secondary); padding-bottom: 10px; display: inline-block; margin-bottom: 20px; }
+        .contact-row { display: flex; align-items: center; margin-bottom: 20px; font-size: 1.1em; }
+        .contact-icon { margin-right: 15px; font-size: 1.2em; }
+        .qr-display { text-align: center; background: white; padding: 20px; border-radius: 10px; color: #333; max-width: 250px; margin: auto; }
+        .qr-display img { width: 100%; height: auto; display: block; }
 
-        footer { background: #222; color: #fff; text-align: center; padding: 60px 20px; margin-top: 80px; font-size: 0.9em; }
-        .footer-law { opacity: 0.7; max-width: 800px; margin: 20px auto; font-size: 0.85em; line-height: 1.8; border-top: 1px solid #444; padding-top: 20px; }
+        /* --- 底部手機固定選單 --- */
+        .mobile-nav { 
+            position: fixed; bottom: 0; left: 0; width: 100%; background: white; 
+            display: flex; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); z-index: 1000;
+        }
+        .mobile-btn { 
+            flex: 1; text-align: center; padding: 15px; font-weight: bold; font-size: 1.1em;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .mobile-call { background: var(--secondary); color: white; }
+        .mobile-line { background: var(--line-color); color: white; }
+        
+        /* --- 法律與 Footer --- */
+        footer { background: #1a252f; color: #aaa; text-align: center; padding: 40px 20px 100px; font-size: 0.85em; }
+        .warning { border: 1px solid #444; padding: 15px; max-width: 800px; margin: 20px auto; color: #888; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 class="hero-h1">台茂當舖</h1>
-    <p class="hero-p">【內湖在地誠信經營】政府立案・合法息低・迅速撥款</p>
-    <div style="color: var(--accent); font-size: 1.5em; font-weight: bold;">汽機車借款免留車 | 黃金名錶專業典當</div>
+    <div class="container header-content">
+        <div class="tagline">政府立案 • 息低保密 • 快速撥款</div>
+        <h1>內湖台茂當舖</h1>
+        <p>在地深耕多年，最懂您的資金需求。<br>汽機車借款免留車，讓您周轉不求人。</p>
+        <div style="margin-top: 30px;">
+            <a href="tel:0939777707" style="background:var(--secondary); color:white; padding:15px 35px; border-radius:50px; font-weight:bold; margin:10px; display:inline-block;">📞 立即通話</a>
+            <a href="https://line.me/ti/p/jeff617668" style="background:var(--line-color); color:white; padding:15px 35px; border-radius:50px; font-weight:bold; margin:10px; display:inline-block;">💬 LINE 諮詢</a>
+        </div>
+    </div>
 </header>
-
-<div class="nav-bar">
-    <a href="tel:0939777707" class="btn btn-call">📞 電話諮詢：0939-777-707</a>
-    <a href="https://line.me/ti/p/areDMMNJ5b" target="_blank" class="btn btn-line">💬 LINE 線上諮詢</a>
-</div>
 
 <div class="container">
     <div class="features">
-        <div class="feature-item"><h3>撥款最快</h3><p>現場鑑定，10分鐘即刻放款</p></div>
-        <div class="feature-item"><h3>利息最低</h3><p>政府法定利率，絕無額外費用</p></div>
-        <div class="feature-item"><h3>手續最簡</h3><p>只需身分證與行照，免保人</p></div>
-    </div>
-
-    <h2>多元化借款服務</h2>
-    <div class="services">
-        <div class="service-card">
-            <div class="service-body">
-                <h3>汽車機車借款 (免留車)</h3>
-                <p>各類轎車、休旅車、貨車、重機、機車皆可辦理。免留車讓您維持生活便利，資金調度不求人。</p>
-            </div>
+        <div class="feature-box">
+            <h3>🚀 撥款最快</h3>
+            <p>手續簡便，現場審核，10分鐘現金到手，解決您的燃眉之急。</p>
         </div>
-        <div class="service-card">
-            <div class="service-body">
-                <h3>黃金鑽石質押</h3>
-                <p>專業鑑定人員現場估價，依照當日國際金價高價收購或典當，安全保險箱密封儲存。</p>
-            </div>
+        <div class="feature-box">
+            <h3>💰 利息最低</h3>
+            <p>遵照政府法規，月息 1% 起，絕無巧立名目手續費。</p>
         </div>
-        <div class="service-card">
-            <div class="service-body">
-                <h3>名錶精品典當</h3>
-                <p>勞力士、百達翡麗等各大名錶，或是愛馬仕、LV精品包，皆可提供高額度融資服務。</p>
-            </div>
+        <div class="feature-box">
+            <h3>🔒 絕對保密</h3>
+            <p>尊重客戶隱私，過程保密，讓您安心借貸無負擔。</p>
         </div>
-        <div class="service-card">
-            <div class="service-body">
-                <h3>工商資金週轉</h3>
-                <p>中小企業大額借款、機器設備融資、支客票貼現，手續簡便，協助企業主靈活應變。</p>
-            </div>
+        <div class="feature-box">
+            <h3>🚗 借車免留</h3>
+            <p>愛車藉由我們變現，車輛您繼續使用，生活交通不受影響。</p>
         </div>
     </div>
 
-    <div class="loan-info">
-        <h3>💡 借款須知與流程</h3>
-        <ul>
-            <li><b>申請條件：</b>年滿18歲之國民，國民身分證。</li>
-            <li><b>還款期限：</b>最短3個月，最長無期限 (依個人還款狀況彈性調整)。</li>
-            <li><b>利息說明：</b>月息1%~2.5% (年利率最高30%)，無違約金，隨借隨還。</li>
-            <li><b>服務流程：</b>1.電話或LINE諮詢 → 2.親臨門市鑑定 → 3.簽約核對身分 → 4.立即撥款拿現金。</li>
-        </ul>
-    </div>
-
-    <div class="contact-flex">
-        <div class="qr-box">
-            <h3>24H LINE 線上加好友</h3>
-            <p>點擊上方按鈕，或掃描 QR Code 聯繫負責人</p>
-            <img src="line-qr.png" alt="台茂當舖 LINE QR Code" class="qr-img">
-            <p style="font-weight: bold; margin-top: 15px;">ID: areDMMNJ5b</p>
+    <h2 class="section-title">專業服務項目</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80');">
+                <span>汽機車借款</span>
+            </div>
+            <div class="service-body">
+                <h3>免留車專案</h3>
+                <ul>
+                    <li>不限車齡、車種，分期車可借。</li>
+                    <li>免留車服務，讓您資金到手，車照跑。</li>
+                    <li>免保人，僅需車主本人雙證件與行照。</li>
+                </ul>
+            </div>
         </div>
-        <div class="info-box">
-            <h3>門市資訊</h3>
-            <p>📍 <b>地址：</b><a href="https://www.google.com/maps/search/?api=1&query=台北市內湖區成功路三段88號" target="_blank" style="color:var(--secondary); text-decoration:none; font-weight:bold;">台北市內湖區成功路三段88號 (點我導航)</a></p>
-            <p>📞 <b>電話：</b>0939-777-707</p>
-            <p>🕒 <b>營業時間：</b>歡迎隨時預約，24小時專人服務</p>
-            <div style="border-radius:15px; overflow:hidden; border:1px solid #ddd; margin-top:20px;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.8841022830864!2d121.5898382!3d25.0719184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac6509f7a77b%3A0xc348259f63559385!2zMTE0台北市內湖區成功路三段88號!5e0!3m2!1szh-TW!2stw!4v1700000000000!5m2!1szh-TW!2stw" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80');">
+                <span>支客票貼現</span>
+            </div>
+            <div class="service-body">
+                <h3>工商融資週轉</h3>
+                <ul>
+                    <li>個人票、公司票、客票皆可辦理。</li>
+                    <li>高額度低利息，協助企業靈活週轉。</li>
+                    <li>當日撥款，讓您不看銀行臉色。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1618453292453-9154784949a2?auto=format&fit=crop&w=600&q=80');">
+                <span>黃金精品典當</span>
+            </div>
+            <div class="service-body">
+                <h3>高價收購/質借</h3>
+                <ul>
+                    <li>黃金、鑽石、勞力士名錶、精品包。</li>
+                    <li>專業鑑定師現場估價，保證高價。</li>
+                    <li>妥善保管，封存入庫，安全無虞。</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80');">
+                <span>房地二胎融資</span>
+            </div>
+            <div class="service-body">
+                <h3>不動產活化</h3>
+                <ul>
+                    <li>房屋、土地、持分皆可詢問。</li>
+                    <li>自有房屋免保人，審核寬鬆。</li>
+                    <li>不受銀行信用瑕疵影響。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cases">
+    <div class="container">
+        <h2 class="section-title">客戶成功案例</h2>
+        <div class="case-grid">
+            <div class="case-card">
+                <div class="case-title">陳先生 / 工程行老闆</div>
+                <div class="case-desc">
+                    「做工程的最怕上游票期太長，下游又要發現金。感謝台茂當舖的**支票貼現**服務，讓我拿還沒到期的客票先換現金發薪水，利息公道，幫了我大忙！」
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-title">林小姐 / 上班族</div>
+                <div class="case-desc">
+                    「家裡臨時急需用錢，但我不想讓家人知道，也不想賣掉代步的機車。台茂的**機車免留車**方案，讓我借了5萬元，車子還能繼續騎去上班，隱私保密做得很好。」
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-title">王先生 / 餐廳經營</div>
+                <div class="case-desc">
+                    「疫情期間生意受影響，需要資金周轉。雖然銀行那邊有點信用瑕疵，但台茂看我有實體店面，二話不說提供**工商融資**，手續簡單又快，真的是救急的好夥伴。」
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="section-title">常見問題 Q&A</h2>
+    <div class="faq-section">
+        <div class="faq-item">
+            <div class="faq-q">當舖借款利息怎麼算？</div>
+            <div class="faq-a">我們為政府立案合法當舖，恪守當舖業法規定，月息最低 1% 起，最高不超過 2.5%（年利率最高 30%）。我們會依據您的擔保品價值與條件，提供最優惠的利率方案。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">會不會查聯徵？信用瑕疵可以借嗎？</div>
+            <div class="faq-a">不用擔心！當舖借款是依據擔保品（汽機車、黃金等）的價值來核貸，**不查聯徵、不看信用評分**。銀行拒絕的案件，我們都能盡力協助。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">汽車機車借款，真的可以不用留車嗎？</div>
+            <div class="faq-a">是的，我們主打**免留車**服務。審核通過後，您不僅能拿到資金，車輛也能繼續使用，不影響您的日常通勤與工作。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">借款期限大概多久？</div>
+            <div class="faq-a">彈性還款！最短 3 個月，最長無限制。您可以選擇「一次結清」或「分期攤還」，隨借隨還，沒有違約金壓力。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">如果沒錢贖回會怎樣？會被暴力討債嗎？</div>
+            <div class="faq-a">絕對不會。我們是正派經營。若您無力償還，該物品僅會流當（所有權歸當舖處理），**不會對您進行任何暴力追討**，您可以完全放心。</div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>聯絡我們</h3>
+                <div class="contact-row">
+                    <span class="contact-icon">📍</span>
+                    <a href="https://goo.gl/maps/Place" target="_blank">台北市內湖區成功路三段88號</a>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-icon">📞</span>
+                    <a href="tel:0939777707">0939-777-707</a>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-icon">🕒</span>
+                    <span>24小時 全年無休 (歡迎預約)</span>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-icon">💬</span>
+                    <span>LINE ID: jeff617668</span>
+                </div>
+                <div style="margin-top:20px;">
+                    <iframe src="https://www.google.com/maps?q=台北市內湖區成功路三段88號&output=embed" width="100%" height="200" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="qr-display">
+                <p style="font-weight:bold; margin-bottom:15px; color:#333;">掃描加 LINE 好友</p>
+                <img src="S__8601642.jpg" alt="台茂當舖 LINE QR Code">
+                <p style="margin-top:10px; color:#666;">ID: jeff617668</p>
             </div>
         </div>
     </div>
 </div>
 
 <footer>
-    <p><b>台北市內湖台茂當舖</b> | 成功路三段88號</p>
-    <p>© 2026 台茂當舖 版權所有</p>
-    <div class="footer-law">
-        ※ 借貸風險警語：還款期數最低3個月，最高無上限。利息及手續費均遵照當舖業法辦理。年利率最高不得超過30%。借貸前請衡量自身財務狀況，理性借款，避免過度負債。
+    <div class="container">
+        <p>© 2026 內湖台茂當舖 | 版權所有</p>
+        <p>政府立案字號：北市警刑當字第(詳細字號)</p>
+        <div class="warning">
+            ※ 借貸風險警語：本公司依據當舖業法規定收取利息。還款期數最低3個月，最高無上限。年利率最高不得超過30%。借貸前請衡量自身財務狀況，避免過度借貸。
+        </div>
     </div>
 </footer>
+
+<div class="mobile-nav">
+    <a href="tel:0939777707" class="mobile-btn mobile-call">📞 電話諮詢</a>
+    <a href="https://line.me/ti/p/jeff617668" target="_blank" class="mobile-btn mobile-line">💬 LINE 聯繫</a>
+</div>
 
 </body>
 </html>
