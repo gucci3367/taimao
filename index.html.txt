@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>內湖台茂當舖 - 台北合法借款 | 成功路三段88號 | 汽機車借款免留車</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", sans-serif; margin: 0; color: #333; line-height: 1.6; background-color: #f8f9fa; }
+        header { background: linear-gradient(rgba(0,45,94,0.85), rgba(0,45,94,0.85)), url('https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'); background-size: cover; color: white; padding: 100px 20px; text-align: center; }
+        .hero h1 { font-size: 3em; margin: 0; letter-spacing: 4px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.3em; margin-top: 15px; font-weight: 300; }
+        
+        nav { background: #b22222; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        nav a { margin: 0 20px; text-decoration: none; color: white; font-weight: bold; font-size: 1.1em; }
+
+        .container { max-width: 1000px; margin: 30px auto; background: white; padding: 40px; box-shadow: 0 0 30px rgba(0,0,0,0.1); border-radius: 12px; }
+        h2 { border-left: 6px solid #b22222; padding-left: 15px; color: #002d5e; margin-bottom: 25px; }
+
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
+        .s-box { padding: 30px; border: 1px solid #eee; border-radius: 15px; text-align: center; transition: 0.4s; background: #fff; }
+        .s-box:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.1); transform: translateY(-10px); border-color: #b22222; }
+        .s-box h3 { color: #b22222; font-size: 1.4em; }
+
+        .cta-section { text-align: center; margin-top: 50px; padding: 40px; background: #002d5e; color: white; border-radius: 15px; }
+        .btn { display: inline-block; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2em; margin: 10px; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .btn-phone { background: #ffffff; color: #b22222; }
+        .btn-line { background: #06c755; color: white; }
+        .btn:hover { transform: scale(1.08); filter: brightness(1.1); }
+
+        .contact-info { margin-top: 30px; font-size: 1.2em; line-height: 2; }
+        .map-container { margin-top: 40px; border-radius: 15px; overflow: hidden; border: 2px solid #eee; }
+
+        footer { background: #222; color: #aaa; text-align: center; padding: 40px 20px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <h1>台茂當舖</h1>
+    <p>【內湖在地首選】合法利息、快速周轉、絕對保密</p>
+</header>
+
+<nav>
+    <a href="#about">關於台茂</a>
+    <a href="#services">借款項目</a>
+    <a href="#contact">立即聯絡</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>服務宗旨</h2>
+        <p>台茂當舖位於<strong>台北市內湖區成功路三段88號</strong>，是政府立案、公會認證的合法當舖。我們秉持「誠信、服務、效率」三大原則，提供多元融資借貸方案，手續簡便、不收手續費，是您解決資金難關的最強後盾。</p>
+    </section>
+
+    <section id="services">
+        <h2>五大核心服務</h2>
+        <div class="service-grid">
+            <div class="s-box">
+                <h3>🚗 汽機車借款</h3>
+                <p>各類車種皆可借，額度最高，<strong>可辦理免留車</strong>，讓您資金車輛同時擁有。</p>
+            </div>
+            <div class="s-box">
+                <h3>💎 黃金珠寶典當</h3>
+                <p>黃金、白金、GIA鑽石專業評估，依照國際牌價高價收購/借貸。</p>
+            </div>
+            <div class="s-box">
+                <h3>⌚ 名錶精品借貸</h3>
+                <p>勞力士、百達翡麗等名錶鑑定，現場撥款，安全庫房二十四小時監控。</p>
+            </div>
+            <div class="s-box">
+                <h3>🏢 房屋土地二胎</h3>
+                <p>自有房地產、持分亦可，代辦銀行二胎、民間週轉，利息優惠。</p>
+            </div>
+            <div class="s-box">
+                <h3>💵 工商融資</h3>
+                <p>支客票貼現、大額資金周轉，不論行業別，快速審核當天撥款。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta-section">
+        <h2>24小時 諮詢服務</h2>
+        <div class="contact-info">
+            📍 店址：台北市內湖區成功路三段88號<br>
+            📞 電話：0939-777-707<br>
+            🆔 LINE ID：0939777707
+        </div>
+        <div style="margin-top: 20px;">
+            <a href="tel:0939777707" class="btn btn-phone">📞 撥打電話諮詢</a>
+            <a href="https://line.me/ti/p/~0939777707" target="_blank" class="btn btn-line">💬 LINE 線上諮詢</a>
+        </div>
+    </section>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3613.886047123456!2d121.590807!3d25.074744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac7b764b8893%3A0x6d0c7f766e6c7c7c!2zMTE0台北市內湖區成功路三段88號!5e0!3m2!1szh-TW!2stw!4v1700000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 台茂當舖 | 政府立案：XXXXXXXX號</p>
+    <p>借貸前請務必確認合約內容，利息計算皆遵照法規辦理。</p>
+</footer>
+
+</body>
+</html>
