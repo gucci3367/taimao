@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>內湖台茂當舖 - 汽車 | 機車 | 3C | 黃金 | 工商融資 | 精品名錶 (成功路三段88號)</title>
-    <meta name="description" content="內湖台茂當舖，全方位借款專家。提供汽車借款、機車借款、3C手機筆電、黃金鑽石、工商融資、名錶精品典當。六大服務項目，息低保密，0939-777-707 快速救援。">
+    <meta name="description" content="內湖台茂當舖，全方位借款專家。提供汽車借款、機車借款、3C手機筆電、黃金鑽石、工商融資、名錶精品典當。六大服務項目，息低保密，02-8792-1111 快速救援。">
     <style>
         :root {
-            --primary: #004080;      /* 專業藍 */
-            --secondary: #d32f2f;    /* 警示紅 */
-            --accent: #ffc107;       /* 財富金 */
+            /* --- 色系升級：更豐富的漸層色 --- */
+            --primary: #1a237e;      /* 皇家深藍 (基底) */
+            --primary-grad: linear-gradient(135deg, #1a237e 0%, #283593 100%); /* 藍色漸層 */
+            
+            --accent: #ffb300;       /* 亮金 (文字/圖示) */
+            --accent-grad: linear-gradient(135deg, #ffca28 0%, #ff6f00 100%); /* 流金漸層 (按鈕) */
+            
+            --secondary: #d50000;    /* 鮮豔紅 (強調/警告) */
+            
             --dark-bg: #1a252f;
-            --light-gray: #f8f9fa;
+            --light-bg: #f5f7fa;
         }
 
         body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; color: #333; line-height: 1.6; padding-bottom: 80px; background-color: #fff; }
@@ -20,83 +26,106 @@
         img { max-width: 100%; height: auto; display: block; }
         
         /* --- 導航 --- */
-        nav { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; padding: 15px 0; }
+        nav { background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; padding: 15px 0; }
         .nav-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
         .logo { font-size: 1.5em; font-weight: bold; color: var(--primary); display: flex; align-items: center; }
-        .logo span { background: var(--secondary); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.6em; margin-left: 10px; vertical-align: middle; }
-        .nav-links a { margin-left: 20px; font-weight: bold; color: #555; }
-        .nav-btn { background: var(--secondary); color: white !important; padding: 8px 20px; border-radius: 20px; }
+        .logo span { background: var(--secondary); color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.6em; margin-left: 10px; vertical-align: middle; box-shadow: 0 2px 5px rgba(213,0,0,0.3); }
+        .nav-links a { margin-left: 20px; font-weight: bold; color: #555; position: relative; }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-btn { background: var(--secondary); color: white !important; padding: 8px 20px; border-radius: 20px; box-shadow: 0 4px 10px rgba(213,0,0,0.3); }
 
-        /* --- Header --- */
+        /* --- Header (更豐富的視覺) --- */
         header { 
-            background: linear-gradient(rgba(0,45,94,0.85), rgba(0,45,94,0.7)), url('image_4dba64.jpg'); 
+            /* 使用深藍漸層疊加圖片，質感更好 */
+            background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(40, 53, 147, 0.75)), url('image_4dba64.jpg'); 
             background-size: cover; background-position: center;
-            color: white; padding: 80px 20px; text-align: center;
+            color: white; padding: 90px 20px; text-align: center;
         }
-        .hero-badge { background: var(--accent); color: #000; display: inline-block; padding: 5px 15px; font-weight: bold; border-radius: 4px; margin-bottom: 20px; }
-        h1 { font-size: 2.5em; margin: 0 0 15px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); letter-spacing: 2px; }
-        .cta-group .btn { display: inline-block; padding: 12px 35px; border-radius: 50px; font-weight: bold; font-size: 1.1em; margin: 10px; }
-        .btn-main { background: var(--accent); color: #000; }
-        .btn-line { background: #06c755; color: white; }
+        .hero-badge { background: var(--accent-grad); color: #000; display: inline-block; padding: 6px 18px; font-weight: bold; border-radius: 50px; margin-bottom: 25px; box-shadow: 0 0 20px rgba(255, 179, 0, 0.6); letter-spacing: 1px; }
+        h1 { font-size: 2.8em; margin: 0 0 20px; text-shadow: 0 5px 15px rgba(0,0,0,0.5); letter-spacing: 3px; font-weight: 800; }
+        .cta-group .btn { display: inline-block; padding: 15px 40px; border-radius: 50px; font-weight: bold; font-size: 1.2em; margin: 10px; transition: transform 0.2s; }
+        .cta-group .btn:hover { transform: scale(1.05); }
+        /* 按鈕升級為漸層色 */
+        .btn-main { background: var(--accent-grad); color: #000; box-shadow: 0 5px 15px rgba(255, 111, 0, 0.4); }
+        .btn-line { background: #06c755; color: white; box-shadow: 0 5px 15px rgba(6, 199, 85, 0.4); }
 
         /* --- 共用區塊設定 --- */
-        .section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-        .section-title { text-align: center; margin-bottom: 40px; }
-        .section-title h2 { font-size: 2.2em; color: var(--primary); position: relative; display: inline-block; }
-        .section-title h2::after { content:''; display: block; width: 60px; height: 4px; background: var(--secondary); margin: 10px auto 0; }
+        .section { padding: 70px 20px; max-width: 1100px; margin: auto; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.4em; color: var(--primary); position: relative; display: inline-block; font-weight: 800; }
+        .section-title h2::after { content:''; display: block; width: 80px; height: 5px; background: var(--accent-grad); margin: 15px auto 0; border-radius: 5px; }
+        .section-title p { color: #666; font-size: 1.1em; margin-top: 15px; }
 
-        /* --- 六大服務項目 (Grid Layout) --- */
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px; }
-        .service-card { background: white; border: 1px solid #eee; border-radius: 12px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s; }
-        .service-card:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .icon-box { font-size: 3em; margin-bottom: 15px; display: block; }
-        .service-card h3 { color: var(--primary); margin: 10px 0; font-size: 1.4em; }
-        .service-card p { color: #666; font-size: 0.95em; margin-bottom: 15px; }
-        .tag-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
-        .tag { background: #f0f4f8; color: var(--primary); padding: 4px 10px; border-radius: 4px; font-size: 0.85em; font-weight: bold; }
+        /* --- 六大服務項目 (卡片升級) --- */
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 35px; margin-top: 30px; }
+        .service-card { 
+            background: white; border-radius: 15px; padding: 35px 25px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; 
+            transition: 0.4s; border-top: 5px solid transparent;
+            position: relative; overflow: hidden;
+        }
+        /* 卡片懸浮效果：邊框變色 + 上浮 */
+        .service-card:hover { transform: translateY(-10px); border-top-color: var(--accent); box-shadow: 0 20px 40px rgba(26, 35, 126, 0.15); }
+        
+        .icon-box { font-size: 3.5em; margin-bottom: 20px; display: block; text-shadow: 2px 2px 0px rgba(0,0,0,0.1); }
+        .service-card h3 { color: var(--primary); margin: 10px 0; font-size: 1.5em; font-weight: bold; }
+        .service-card p { color: #555; font-size: 1em; margin-bottom: 20px; line-height: 1.8; }
+        
+        .tag-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .tag { background: #e8eaf6; color: var(--primary); padding: 5px 12px; border-radius: 20px; font-size: 0.9em; font-weight: bold; border: 1px solid #c5cae9; }
 
         /* --- 比較表 --- */
-        .compare-table { width: 100%; border-collapse: collapse; box-shadow: 0 5px 20px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; background: white; }
-        .compare-table th, .compare-table td { padding: 15px; text-align: center; border-bottom: 1px solid #eee; }
-        .compare-table th.highlight { background: var(--primary); color: white; width: 35%; }
-        .compare-table td.check { color: var(--secondary); font-weight: bold; }
+        .compare-table { width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 15px; overflow: hidden; background: white; }
+        .compare-table th, .compare-table td { padding: 20px; text-align: center; border-bottom: 1px solid #eee; font-size: 1.05em; }
+        .compare-table th { background: #f8f9fa; color: #555; font-weight: 600; }
+        /* 標題欄位加強 */
+        .compare-table th.highlight { background: var(--primary-grad); color: white; width: 35%; font-size: 1.2em; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .compare-table td.check { color: var(--secondary); font-weight: bold; font-size: 1.2em; }
+        .compare-table tr:hover td { background-color: #fffde7; } /* 滑過變色 */
 
-        /* --- 成功案例 (新加入) --- */
-        .cases-section { background: var(--light-gray); padding: 60px 20px; margin-top: 40px; }
+        /* --- 成功案例 --- */
+        .cases-section { background: var(--light-bg); padding: 70px 20px; margin-top: 40px; position: relative; }
+        .cases-section::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: var(--primary-grad); }
         .case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1100px; margin: auto; }
-        .case-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
-        .case-title { font-weight: bold; color: var(--primary); font-size: 1.1em; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px; }
-        .case-desc { font-style: italic; color: #555; font-size: 0.95em; line-height: 1.8; }
+        .case-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-left: 5px solid var(--accent); }
+        .case-title { font-weight: bold; color: var(--primary); font-size: 1.2em; border-bottom: 1px dashed #ddd; padding-bottom: 15px; margin-bottom: 15px; display: flex; align-items: center; }
+        .case-title::before { content: "★"; color: var(--accent); margin-right: 10px; font-size: 1.2em; }
+        .case-desc { font-style: italic; color: #555; font-size: 1em; line-height: 1.8; }
 
         /* --- 應備文件 --- */
-        .docs-grid { max-width: 1000px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .doc-box { background: white; padding: 25px; border-radius: 8px; border-left: 5px solid var(--secondary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .doc-box h4 { margin-top: 0; color: var(--primary); font-size: 1.1em; }
-        .doc-list li { margin-bottom: 8px; padding-left: 20px; position: relative; font-size: 0.9em; }
-        .doc-list li::before { content: '✔'; color: var(--secondary); position: absolute; left: 0; }
+        .docs-grid { max-width: 1000px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .doc-box { background: white; padding: 30px; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.05); position: relative; overflow: hidden; }
+        .doc-box::top { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: var(--primary); }
+        .doc-box h4 { margin-top: 0; color: var(--primary); font-size: 1.2em; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; margin-bottom: 15px; }
+        .doc-list li { margin-bottom: 10px; padding-left: 25px; position: relative; font-size: 1em; color: #444; }
+        .doc-list li::before { content: '✔'; color: var(--secondary); position: absolute; left: 0; font-weight: bold; }
 
-        /* --- 問與答 Q&A (新加入) --- */
+        /* --- 問與答 Q&A --- */
         .faq-section { max-width: 900px; margin: auto; }
         .faq-item { border-bottom: 1px solid #eee; padding: 20px 0; }
-        .faq-q { font-weight: bold; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; }
-        .faq-q::after { content: '+'; font-size: 1.5em; color: var(--secondary); font-weight: normal; }
-        .faq-a { color: #666; margin-top: 10px; display: block; line-height: 1.8; font-size: 0.95em; }
+        .faq-q { font-weight: bold; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 1.15em; transition: color 0.3s; }
+        .faq-q:hover { color: var(--secondary); }
+        .faq-q::after { content: '+'; font-size: 1.5em; color: var(--accent); font-weight: bold; }
+        .faq-a { color: #666; margin-top: 15px; display: block; line-height: 1.8; font-size: 1em; background: #fafafa; padding: 15px; border-radius: 8px; }
 
         /* --- 聯絡區塊 --- */
-        .contact-box { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); text-align: center; max-width: 800px; margin: 50px auto; }
+        .contact-box { background: white; padding: 50px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); text-align: center; max-width: 800px; margin: 50px auto; border: 1px solid #eee; }
+        .contact-highlight { font-size: 1.3em; color: var(--primary); font-weight: bold; margin-bottom: 10px; }
+        .phone-big { font-size: 2em; color: var(--secondary); font-weight: 800; font-family: "Arial", sans-serif; letter-spacing: 1px; margin: 10px 0; display: block;}
         
         /* --- 底部固定欄 --- */
-        .sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; display: flex; z-index: 2000; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); }
+        .sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; display: flex; z-index: 2000; box-shadow: 0 -5px 20px rgba(0,0,0,0.15); }
         .sticky-btn { flex: 1; text-align: center; padding: 15px; color: white; font-weight: bold; font-size: 1.2em; display: flex; align-items: center; justify-content: center; }
         .btn-tel { background: var(--secondary); }
         .btn-line-app { background: #06c755; }
         
-        footer { background: #333; color: #888; text-align: center; padding: 40px 20px 100px; font-size: 0.8em; }
+        footer { background: #263238; color: #b0bec5; text-align: center; padding: 50px 20px 100px; font-size: 0.9em; }
 
         @media (max-width: 768px) {
             .nav-links { display: none; }
-            h1 { font-size: 1.8em; }
+            h1 { font-size: 2em; }
             .service-grid { grid-template-columns: 1fr; }
+            .phone-big { font-size: 1.6em; }
         }
     </style>
 </head>
@@ -106,7 +135,7 @@
     <div class="nav-container">
         <div class="logo">內湖台茂當舖 <span>政府立案</span></div>
         <div class="nav-links">
-            <a href="#services">服務項目</a>
+            <a href="#services">六大服務</a>
             <a href="#cases">成功案例</a>
             <a href="#faq">常見問答</a>
             <a href="#contact" class="nav-btn">立即諮詢</a>
@@ -120,7 +149,7 @@
     <p>汽機車免留車 | 3C黃金名錶 | 工商融資週轉</p>
     
     <div class="cta-group">
-        <a href="tel:0939777707" class="btn btn-main">📞 0939-777-707</a>
+        <a href="tel:0287921111" class="btn btn-main">📞 02-8792-1111</a>
         <a href="https://line.me/ti/p/areDMMNJ5b" target="_blank" class="btn btn-line">💬 LINE 線上試算</a>
     </div>
 </header>
@@ -319,15 +348,15 @@
 </div>
 
 <div class="contact-box" id="contact">
-    <h2>還在為資金煩惱嗎？</h2>
-    <p>台茂當舖提供您最隱密、快速的資金救援。</p>
+    <div class="contact-highlight">還在為資金煩惱嗎？</div>
+    <h2>台茂當舖 提供您最快速的資金救援</h2>
+    <a href="tel:0287921111" class="phone-big">02-8792-1111</a>
     
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 30px; text-align: left;">
         <div>
             <p>📍 <b>地址：</b>台北市內湖區成功路三段88號</p>
-            <p>📞 <b>電話：</b>0939-777-707</p>
             <p>🕒 <b>營業：</b>24H 全年無休</p>
-            <div style="margin-top: 15px; width: 250px; height: 150px; background: #ddd; border-radius: 8px; overflow: hidden;">
+            <div style="margin-top: 15px; width: 250px; height: 150px; background: #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                 <iframe src="https://www.google.com/maps?q=台北市內湖區成功路三段88號&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
@@ -349,7 +378,7 @@
 </footer>
 
 <div class="sticky-footer">
-    <a href="tel:0939777707" class="sticky-btn btn-tel">📞 電話諮詢</a>
+    <a href="tel:0287921111" class="sticky-btn btn-tel">📞 02-8792-1111</a>
     <a href="https://line.me/ti/p/areDMMNJ5b" target="_blank" class="sticky-btn btn-line-app">💬 LINE 聯繫</a>
 </div>
 
